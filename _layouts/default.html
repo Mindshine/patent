@@ -1,28 +1,40 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-		  <meta charset="UTF-8">
-			<title>{{ page.title }}</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-			<!-- link to main stylesheet -->
-      <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-		</head>
-		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/contact">Contact</a></li>
-	    		</ul>
-			</nav>
-			<div class="container">
-			
+<html lang="{{ page.lang }}">
+	<head>
+		<meta charset="UTF-8">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="{% if page.desc %}{{ page.desc | strip_html }}{% else %}{{ page.excerpt | strip_html | replace: "[[", " ("  | replace: "]]", ")" | strip_newlines }}{% endif %}">
+		<title>{{ page.title }}</title>
+		<link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">{% capture hide %}
+		{% assign posts=site.posts | where:"date", page.date %}
+		{% for post in posts %}
+			{% if post.lang != page.lang %}
+				{% assign url = post.url %}
+				{% assign lang = post.lang %}
+			{% endif %}
+		{% endfor %}
+		{% endcapture %}{% if url %}
+		<link rel="alternate" hreflang="{{ lang }}" href="{{ url }}" />{% endif %}
+	</head>
+	<body class="{{ page.lang }}{% if page.type == 'pages' %} page{% endif %}">
+		<nav>
+			<ul>{% for menu in site.data.navigation[page.lang] %}
+				<li><a href="{{ menu[1].url }}">{{ menu[1].title }}</a></li>{% endfor %}
+				<li class="lang">{% assign posts=site.posts | where:"date", page.date | sort: 'path' %}{% for post in posts %}
+					<a href="{{ post.url }}" class="{{ post.lang }}">{{ post.lang }}</a>{% endfor %}
+				</li>
+			</ul>
+		</nav>
+		<div class="container">
+
 			{{ content }}
-			
-			</div><!-- /.container -->
-			<footer>
-			</footer>
-		</body>
-	</html>
+
+		</div><!-- /.container -->
+		<footer>
+		</footer>
+	</body>
+</html>
