@@ -1,12 +1,19 @@
 name: Patent
-markdown: kramdown
+permalink: /:title/
+
+markdown: redcarpet
+redcarpet:
+  extensions: ['smart', 'superscript']
+
+gems:
+  - jekyll-redirect-from
 
 defaults:
   -
     scope:
       path: ""
     values:
-      lang: ua
+      lang: en
       layout: default
   -
     scope:
@@ -36,4 +43,3 @@ defaults:
     values:
       type: pages
       desc: "Site to registrate intillectual property"
-      
