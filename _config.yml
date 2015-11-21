@@ -1,4 +1,5 @@
 name: Patent
+base: /patent/
 permalink: /:title/
 
 markdown: redcarpet
