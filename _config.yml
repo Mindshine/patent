@@ -13,13 +13,8 @@ defaults:
     scope:
       path: ""
     values:
-      lang: en
-      layout: default
-  -
-    scope:
-      path: _posts/ua
-    values:
       lang: ua
+      layout: default
   -
     scope:
       path: _posts/ua/pages
@@ -37,6 +32,11 @@ defaults:
     values:
       type: pages
       desc: "Сайт регистрации авторских прав на интеллектуальную собственность"
+  -
+    scope:
+      path: _posts/en
+    values:
+      lang: en
   -
     scope:
       path: _posts/en/pages
