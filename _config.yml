@@ -1,2 +1,39 @@
 name: Patent
 markdown: kramdown
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      lang: ua
+      layout: default
+  -
+    scope:
+      path: _posts/ua
+    values:
+      lang: ua
+  -
+    scope:
+      path: _posts/ua/pages
+    values:
+      type: pages
+      desc: "Сайт реєстрації авторських прав на інтелектуальну власність"
+  -
+    scope:
+      path: _posts/ru
+    values:
+      lang: ru
+  -
+    scope:
+      path: _posts/ru/pages
+    values:
+      type: pages
+      desc: "Сайт регистрации авторских прав на интеллектуальную собственность"
+  -
+    scope:
+      path: _posts/en/pages
+    values:
+      type: pages
+      desc: "Site to registrate intillectual property"
+      
