@@ -1,0 +1,21 @@
+en:
+  logo:
+    title: "KPB"
+    url:   "/"
+  home:
+    title: "Home"
+    url:   "/index.html"
+ru:
+  logo:
+    title: "KPB"
+    url:   "/"
+  home:
+    title: "Home"
+    url:   "/index.html"
+ua:
+  logo:
+    title: "KPB"
+    url:   "/"
+  home:
+    title: "Home"
+    url:   "/index.html"
