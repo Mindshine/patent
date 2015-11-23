@@ -1,21 +1,57 @@
 en:
-  logo:
-    title: "KPB"
-    url:   "/patent/"
   home:
     title: "Home"
-    url:   "/patent/index.html"
-ru:
-  logo:
-    title: "КБП"
     url:   "/patent/"
+  contact:
+    title: "Contact Us"
+    url:   "/patent/contact/"
+  invention:
+    title: "Contact Us"
+    url:   "/patent/invention/"
+  design:
+    title: "Contact Us"
+    url:   "/patent/design/"
+  trademark:
+    title: "Contact Us"
+    url:   "/patent/trademark/"
+  about:
+    title: "About Us"
+    url:   "/patent/about/"
+ru:
   home:
     title: "Главная"
-    url:   "/patent/index.html"
-ua:
-  logo:
-    title: "КБП"
     url:   "/patent/"
+  contact:
+    title: "Контакт"
+    url:   "/patent/contact/"
+  invention:
+    title: "Изобретения и полезные модели"
+    url:   "/patent/invention/"
+  design:
+    title: "Промышленный образец"
+    url:   "/patent/design/"
+  trademark:
+    title: "Знаки для товаров и услуг"
+    url:   "/patent/trademark/"
+  about:
+    title: "О нас"
+    url:   "/patent/about/"
+ua:
   home:
     title: "Головна"
-    url:   "/patent/index.html"
+    url:   "/patent/"
+  contact:
+    title: "Контакт"
+    url:   "/patent/contact/"
+  invention:
+    title: "Винаходи та корисні моделі"
+    url:   "/patent/invention/"
+  design:
+    title: "Промисловий зразок"
+    url:   "/patent/design/"
+  trademark:
+    title: "Знаки для товарів і послуг"
+    url:   "/patent/trademark/"
+  about:
+    title: "Про нас"
+    url:   "/patent/about/"
