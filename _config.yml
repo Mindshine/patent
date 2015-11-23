@@ -1,4 +1,4 @@
-permalink: /:name/
+permalink: /:title/
 
 markdown: redcarpet
 redcarpet:
