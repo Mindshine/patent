@@ -1,5 +1,5 @@
 permalink: /:name/
-base: http://mindshine.github.io/patent/
+baseurl: http://mindshine.github.io/patent/
 
 markdown: redcarpet
 redcarpet:
