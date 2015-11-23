@@ -1,7 +1,7 @@
 en:
   home:
     title: "Home"
-    url:   "/patent/"
+    url:   "/"
   contact:
     title: "Contact Us"
     url:   "/patent/contact/"
