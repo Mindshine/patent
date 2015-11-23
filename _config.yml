@@ -1,5 +1,5 @@
 name: Patent
-permalink: /:title/
+permalink: /:name/
 base: http://mindshine.github.io/patent/
 
 markdown: redcarpet
