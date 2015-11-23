@@ -1,4 +1,3 @@
-name: Patent
 permalink: /:name/
 base: http://mindshine.github.io/patent/
 
