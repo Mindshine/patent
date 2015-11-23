@@ -1,6 +1,6 @@
 name: Patent
-base: /patent/
 permalink: /:title/
+base: http://mindshine.github.io/patent/
 
 markdown: redcarpet
 redcarpet:
