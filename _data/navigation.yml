@@ -1,57 +1,57 @@
 en:
   home:
     title: "Home"
-    url:   "/patent/en/"
+    url:   "/en/"
   contact:
     title: "Contact Us"
-    url:   "/patent/en/contact.html"
+    url:   "/en/contact.html"
   invention:
     title: "Protection of the rights of Inventions and Utility Modelt in Ukraine"
-    url:   "/patent/en/inventions.html"
+    url:   "/en/inventions.html"
   design:
     title: "Protection of Industrial Designs in Ukraine"
-    url:   "/patent/en/designs.html"
+    url:   "/en/designs.html"
   trademark:
     title: "The ukrainian trademark registration practice"
-    url:   "/patent/en/trademark.html"
+    url:   "/en/trademark.html"
   about:
     title: "About Us"
-    url:   "/patent/en/about.html"
+    url:   "/en/about.html"
 ru:
   home:
     title: "Главная"
-    url:   "/patent/ru/"
+    url:   "/ru/"
   contact:
     title: "Контакт"
-    url:   "/patent/ru/contact.html"
+    url:   "/ru/contact.html"
   invention:
     title: "Изобретения и полезные модели"
-    url:   "/patent/ru/inventions.html"
+    url:   "/ru/inventions.html"
   design:
     title: "Промышленный образец"
-    url:   "/patent/ru/designs.html"
+    url:   "/ru/designs.html"
   trademark:
     title: "Знаки для товаров и услуг"
-    url:   "/patent/ru/trademark.html"
+    url:   "/ru/trademark.html"
   about:
     title: "О нас"
-    url:   "/patent/ru/about.html"
+    url:   "/ru/about.html"
 ua:
   home:
     title: "Головна"
-    url:   "/patent"
+    url:   ""
   contact:
     title: "Контакт"
-    url:   "/patent/contact.html"
+    url:   "/contact.html"
   invention:
     title: "Винаходи та корисні моделі"
-    url:   "/patent/inventions.html"
+    url:   "/inventions.html"
   design:
     title: "Промисловий зразок"
-    url:   "/patent/designs.html"
+    url:   "/designs.html"
   trademark:
     title: "Знаки для товарів і послуг"
-    url:   "/patent/trademark.html"
+    url:   "/trademark.html"
   about:
     title: "Про нас"
-    url:   "/patent/about.html"
+    url:   "/about.html"
