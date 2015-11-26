@@ -14,6 +14,7 @@ defaults:
     values:
       lang: ua
       layout: default
+      title: Київське патентне бюро
   -
     scope:
       path: _posts/ua/pages
@@ -25,6 +26,7 @@ defaults:
       path: _posts/ru
     values:
       lang: ru
+      title: Киевское патентное бюро
   -
     scope:
       path: _posts/ru/pages
@@ -36,6 +38,7 @@ defaults:
       path: _posts/en
     values:
       lang: en
+      title: Kyiv patent bureau
   -
     scope:
       path: _posts/en/pages
