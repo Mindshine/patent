@@ -1,0 +1,3 @@
+en: KYIVPATENTBUREAU &copy; {{ site.time | date: '%Y' }} All rights reserved
+ru: КИЕВПАТЕНТБЮРО &copy; {{ site.time | date: '%Y' }} Все права защищены
+ua: КИЇВПАТЕНТБЮРО &copy; {{ site.time | date: '%Y' }} Всі права захищені
