@@ -1,3 +1,9 @@
-en: KYIVPATENTBUREAU &copy; {{ site.time | date: '%Y' }} All rights reserved
-ru: КИЕВПАТЕНТБЮРО &copy; {{ site.time | date: '%Y' }} Все права защищены
-ua: КИЇВПАТЕНТБЮРО &copy; {{ site.time | date: '%Y' }} Всі права захищені
+en: 
+  owner: KYIVPATENTBUREAU
+  reserved: All rights reserved
+ru: 
+  owner: КИЕВПАТЕНТБЮРО
+  reserved: Все права защищены
+ua: 
+  owner: КИЇВПАТЕНТБЮРО
+  reserved: Всі права захищені
