@@ -17,6 +17,9 @@ en:
   contact:
     title: "Contact Us"
     url:   "/en/contact.html"
+  prices:
+    title: "Prices"
+    url:   "/en/prices.html"
 ru:
   home:
     title: "Главная"
