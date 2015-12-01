@@ -2,13 +2,13 @@ en:
   home:
     title: "Home"
     url:   "/en/"
-  trademark:
-    title: "The ukrainian trademark registration practice"
+  trademarks:
+    title: "Trademarks"
     url:   "/en/trademark.html"
-  invention:
+  inventions:
     title: "Inventions and Utility Models"
     url:   "/en/inventions.html"
-  design:
+  designs:
     title: "Protection of Industrial Designs in Ukraine"
     url:   "/en/designs.html"
   about:
@@ -21,13 +21,13 @@ ru:
   home:
     title: "Главная"
     url:   "/ru/"
-  trademark:
+  trademarks:
     title: "Знаки для товаров и услуг"
     url:   "/ru/trademark.html"
-  invention:
+  inventions:
     title: "Изобретения и полезные модели"
     url:   "/ru/inventions.html"
-  design:
+  designs:
     title: "Промышленный образец"
     url:   "/ru/designs.html"
   about:
@@ -40,13 +40,13 @@ ua:
   home:
     title: "Головна"
     url:   ""
-  trademark:
+  trademarks:
     title: "Знаки для товарів і послуг"
     url:   "/trademark.html"
-  invention:
+  inventions:
     title: "Винаходи та корисні моделі"
     url:   "/inventions.html"
-  design:
+  designs:
     title: "Промисловий зразок"
     url:   "/designs.html"
   about:
