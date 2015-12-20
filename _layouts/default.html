@@ -37,13 +37,13 @@
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse">
-					<ul class="nav navbar-nav navbar-right">{% for menu in site.data.navigation[page.lang] %}
-						<li><a href="{{base}}{{ menu[1].url }}">{{ menu[1].title }}</a></li>{% endfor %}
-					</ul>
 					<ul class="lang nav navbar-nav navbar-right">{% assign posts=site.posts | where:"name", page.name | sort: 'path' %}{% for post in posts %}
 						<li>
 							<a href="{{base}}{{ post.url }}" class="{{ post.lang }}" title="{{ site.data.languages[post.lang].name }}">{{ site.data.languages[post.lang].short }}</a>
 						</li>{% endfor %}
+					</ul>
+					<ul class="nav navbar-nav navbar-right">{% for menu in site.data.navigation[page.lang] %}
+						<li><a href="{{base}}{{ menu[1].url }}">{{ menu[1].title }}</a></li>{% endfor %}
 					</ul>
 				</div>
 				<!-- /.navbar-collapse -->
