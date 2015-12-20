@@ -7,10 +7,18 @@
 		<meta name="description" content="{% if page.desc %}{{ page.desc | strip_html }}{% else %}{{ page.excerpt | strip_html | replace: "[[", " ("  | replace: "]]", ")" | strip_newlines }}{% endif %}">
 		<title>{{ page.title }}</title>
 		{% include base.html %}
+		<!-- Bootstrap Core CSS -->
+		<link href="{{base}}/stylesheets/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="{{base}}/stylesheets/normalize.css" media="screen">
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="{{base}}/stylesheets/stylesheet.css" media="screen">{% capture hide %}
+		<link rel="stylesheet" type="text/css" href="{{base}}/stylesheets/stylesheet.css" media="screen">
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+        		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    		<![endif]-->{% capture hide %}
 		{% assign posts=site.posts | where:"date", page.date %}
 		{% for post in posts %}
 			{% if post.lang != page.lang %}
