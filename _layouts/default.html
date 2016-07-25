@@ -43,13 +43,13 @@
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="lang nav navbar-nav navbar-right">{% assign posts=site.posts | where:"name", page.name | sort: 'path' %}{% for post in posts %}
+					<ul class="nav navbar-nav navbar-right">{% for menu in site.data.navigation[page.lang] %}
+						<li><a href="{{base}}{{ menu[1].url }}">{{ menu[1].title }}</a></li>{% endfor %}
+					</ul>
+					<ul class="lang navbar-right">{% assign posts=site.posts | where:"name", page.name | sort: 'path' %}{% for post in posts %}
 						<li>
 							<a href="{{base}}{{ post.url }}" class="{{ post.lang }}" title="{{ site.data.languages[post.lang].name }}">{{ site.data.languages[post.lang].short }}</a>
 						</li>{% endfor %}
-					</ul>
-					<ul class="nav navbar-nav navbar-right">{% for menu in site.data.navigation[page.lang] %}
-						<li><a href="{{base}}{{ menu[1].url }}">{{ menu[1].title }}</a></li>{% endfor %}
 					</ul>
 				</div>
 				<!-- /.navbar-collapse -->
@@ -63,7 +63,7 @@
 		<footer>
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-12 text-center">
+					<div class="col-lg-12 text-center copyright">
 						<p>{{ site.data.copyright[page.lang].owner }} &copy; {{ site.time | date: '%Y' }} {{ site.data.copyright[page.lang].reserved }}</p>
 					</div>
 				</div>
